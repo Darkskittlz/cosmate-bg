@@ -21,10 +21,12 @@ const InnerContainer = styled.div`
     h1 {
         margin-top: 20px;
         color: white;
+        font-size: 50px;
         text-align: center;
     }
 
     p {
+        font-family: 'notMyType';
         color: white;
         text-align: center;
     }

@@ -4,11 +4,11 @@ import { BrowserRouter as  Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import App from './App'
-import 'antd/dist/antd.css';
+
 
 
 ReactDOM.render(
     <Router>
         <App />
     </Router>,
-    document.getElementById('root'));
+document.getElementById('root'));

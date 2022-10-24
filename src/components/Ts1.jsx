@@ -184,7 +184,7 @@ const TitleBox = styled.div`
     display: flex;
     position: fixed;
     z-index: 998;
-    width: calc(100% - 200px);
+    width: calc(100% - 210px);
     justify-content: center;
     margin-top: 0.5%;
     @media (max-width: 860px){
