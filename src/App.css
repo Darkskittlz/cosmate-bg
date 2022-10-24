@@ -74,9 +74,6 @@ a:hover {
     z-index: 999;
 }
 
-.main {
-    width: calc(100% - 200px);
-}
 
 .nav-container {
     position: fixed;
@@ -85,11 +82,12 @@ a:hover {
     margin: 10px;
     height: 100vh;
     margin: 0px;
-    background-color: rgb(0, 21, 41);
+    backdrop-filter: blur(20px);
+    background-color: black;
 }
 
 .logo-container {
-    background-color: #001529;
+    backdrop-filter: blur(50px);
     display: flex;
     padding: 20px;
     align-items: center;
@@ -144,130 +142,3 @@ a:hover {
     color: #4B4453;
 }
 
-.homeTitle {
-    font-size: 2.4rem;
-    font-weight: bolder;
-    position: relative;
-    color: #845EC2;
-    text-shadow: #FEFEDF 1px 0 5px;
-    animation: glitch 2s linear infinite;
-}
-
-/* nate's css end */
-
-@media screen and (max-width:1300px) {
-    .main {
-        margin-left: 50px;
-    }
-}
-
-@media screen and (max-width:1170px) {
-    .main {
-        margin-left: 50px;
-    }
-}
-
-@media screen and (max-width:1000px) {
-    .nav-container {
-        width: 250px;
-    }
-}
-
-@media screen and (max-width:800px) {
-    .app {
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .navbar {
-        flex: 1;
-    }
-
-    .main {
-        flex: 1;
-        width: 100%;
-        display: flex;
-        bottom: 0;
-        margin-top: 90px;
-        margin-left: 0px;
-    }
-
-    .nav-container {
-        height: 8vh;
-        position: fixed;
-        width: 100%;
-        z-index: 100;
-        background-color: var(--bgSecondary);
-    }
-
-    .menu-control-container {
-        display: block !important;
-    }
-
-    .ant-menu {
-        position: absolute;
-        right: 0px;
-    }
-
-    .home-title {
-        font-size: 1.4rem !important;
-    }
-
-    .show-more {
-        font-size: 1.3rem !important;
-    }
-
-    #homeBody {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-    }
-}
-
-/* Jeremy's CSS */
-
-.each-fade {
-    position: relative;
-    width: 100%;
-    z-index: 999;
-    height: 100%;
-}
-
-.each-fade>div {
-    z-index: 998;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.each-fade>div img {
-    width: 350px;
-    height: 380px;
-    margin: 0px auto;
-    z-index: 998;
-    object-fit: cover;
-}
-
-.each-fade p {
-    width: 25%;
-    font-size: 1em;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    margin: 0;
-    background: #adceed;
-}
-
-.footer {
-    background-color: #001529;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
-
-    @media (max-width: 860px) {
-        display: none;
-    }
-}

@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Canvas, extend, useFrame, useThree } from '@react-three/fiber';
 import { TerrainSphere } from './AboutXtraFiles/TerrainSphere/TerrainSphere';
+import Homepage from './Homepage';
 
 extend({ OrbitControls })
 
@@ -307,7 +308,7 @@ const ts1 = () => {
                 <div className="anim">
                     <Suspense fallback={<div>Loading...</div>}>
                         <TitleBox>
-                            <Title>#1 </Title>
+                            <Homepage />
                         </TitleBox>
                         <AnimationCanvas />
                     </Suspense>

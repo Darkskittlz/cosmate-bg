@@ -1,26 +1,44 @@
 import React, { useEffect } from 'react'
 import homeElement from '../constants/homeElement.js'
 import '../App.css'
+import styled from 'styled-components';
 
 
 
-const Homepage = (props) => {
+const InnerContainer = styled.div`
+    width: 500px;
+    padding: 10px;
+    height: 500px;
+    display: flex;
+    margin-left: 20%;
+    margin-top: 15%;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid white;
+    flex-direction: column;
+    
+    h1 {
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+    }
 
-    useEffect(() => {
-        homeElement();
-    }, []);
+    p {
+        color: white;
+        text-align: center;
+    }
+`
 
-    // console.log("the visits are at: ", visitCount)
+
+const Homepage = () => {
+
 
     return (
-        <>
-            <div id='homeBody'>
-                <div id='homeCard'>
-                    <div id="canvas"></div>
-                    <h1 className='homeTitle'>Backgrounds</h1>
-                </div>
-            </div>
-        </>
+        <InnerContainer>
+            <h1>Cosmate Frontend</h1>
+            <p>Sample text, blah blah blah</p>
+        </InnerContainer>
     )
 };
 
